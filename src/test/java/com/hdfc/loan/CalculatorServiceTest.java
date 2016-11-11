@@ -79,4 +79,15 @@ public class CalculatorServiceTest{
 		assertEquals(5,rs);
 	}
 
+	@Test
+	public void testNegativeminNumber(){
+		int rs = calculatorService.minNumber(10,-25);
+		assertEquals(-25,rs);
+	}
+	
+	@Test
+	public void testTwoNegativeminNumber(){
+		int rs = calculatorService.minNumber(-10,-25);
+		assertEquals(-25,rs);
+	}
 }
