@@ -73,5 +73,10 @@ public class CalculatorServiceTest{
 		assertEquals(10,rs);
 	}
 
+	@Test
+	public void testminNumber(){
+		int rs = calculatorService.minNumber(10,5);
+		assertEquals(5,rs);
+	}
 
 }
